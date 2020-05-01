@@ -23,33 +23,13 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "5cb4ae87-0864-4c4f-a626-31ccf6567d73"
-        },
-        {
-            "id": "2dcf9566-6730-43a0-9c1f-877ebb58bc11",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 38,
-            "eventtype": 5,
-            "m_owner": "5cb4ae87-0864-4c4f-a626-31ccf6567d73"
-        },
-        {
-            "id": "361519c9-ed8c-46ac-b266-5d1a96889960",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 40,
-            "eventtype": 5,
-            "m_owner": "5cb4ae87-0864-4c4f-a626-31ccf6567d73"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         
     ],
-    "parentObjectId": "47d7c8cf-91eb-41c0-85e2-445e135bda12",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -133,6 +113,34 @@
             "value": "0",
             "varName": "grout",
             "varType": 1
+        },
+        {
+            "id": "273c4422-5d97-41bf-9c72-efa02496b5e0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "cells_x",
+            "varType": 1
+        },
+        {
+            "id": "cf426e80-b19f-48aa-a8be-efb165c223b9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "cells_y",
+            "varType": 0
         }
     ],
     "solid": false,

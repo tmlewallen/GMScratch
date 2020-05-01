@@ -5,26 +5,6 @@
     "name": "obj_grid_cell",
     "eventList": [
         {
-            "id": "a491469f-53ca-43ad-ba66-04a03c6b26ee",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 6,
-            "m_owner": "42389c63-a167-451a-9243-9646d0b14fea"
-        },
-        {
-            "id": "da286e0c-2a7d-45d5-ae21-f0ea16ed359e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
-            "eventtype": 6,
-            "m_owner": "42389c63-a167-451a-9243-9646d0b14fea"
-        },
-        {
             "id": "b498ef09-fa02-4954-9c0d-23d1337fd8e9",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -47,7 +27,7 @@
     ],
     "maskSpriteId": "5636f952-3553-44bc-a1c7-55408d647181",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "9d0b341f-1691-4144-91f5-857ec774537c",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -91,7 +71,7 @@
             "varType": 5
         },
         {
-            "id": "fca7bcac-66c5-4985-b390-a27e348b776a",
+            "id": "d37380c0-5f7b-47a8-a627-f5811a783023",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -100,23 +80,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "pos_x",
-            "varType": 1
-        },
-        {
-            "id": "22ce90eb-2347-4518-b7b2-85327e45578e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "pos_y",
-            "varType": 1
+            "value": "noone",
+            "varName": "occupant",
+            "varType": 5
         }
     ],
     "solid": false,
