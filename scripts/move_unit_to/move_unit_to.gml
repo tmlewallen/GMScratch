@@ -3,6 +3,7 @@
 /// @param unit unit to be moved on grid
 /// @param xx x position on grid
 /// @param yy y position on grid
+/// @param willOccupy if this unit can 'occupy' that cell or just be at that position
 
 var grid = argument0
 var unit = argument1

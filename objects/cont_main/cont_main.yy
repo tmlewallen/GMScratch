@@ -69,9 +69,37 @@
             "value": "0",
             "varName": "cursor",
             "varType": 5
+        },
+        {
+            "id": "2a902a3c-15ed-4ae5-887f-f7c56c5e3767",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "fleet_controller",
+            "varType": 5
+        },
+        {
+            "id": "fc825a49-f36b-4d65-b08f-0f0ed8a86c20",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "current_step",
+            "varType": 5
         }
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "visible": false
 }

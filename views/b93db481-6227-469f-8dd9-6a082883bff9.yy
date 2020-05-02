@@ -6,7 +6,8 @@
     "children": [
         "4dda98f1-5912-47ff-bdac-e2058df911d7",
         "4539d172-cb9c-4afd-9f70-540a9fa6283f",
-        "f71ff2b2-5806-4cbb-9050-44d5195a5e95"
+        "f71ff2b2-5806-4cbb-9050-44d5195a5e95",
+        "2a07c831-be68-404a-8ec2-7572216f3f43"
     ],
     "filterType": "GMObject",
     "folderName": "controller",

@@ -1,14 +1,14 @@
 {
-    "id": "9b471ebe-ff24-41c6-b8c1-77ab40ee5f9a",
+    "id": "78d67a35-0636-4ec6-bed0-00140624e820",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "i_pos_movable",
+    "name": "cont_fleet",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "9d0b341f-1691-4144-91f5-857ec774537c",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,7 +24,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "3bf52eee-6c55-4988-9d37-70f8cb1804d1",
+            "id": "616e8bae-faf3-49d5-88d5-54402a4a1b9d",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -33,12 +33,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
-            "varName": "constrained",
-            "varType": 3
+            "value": "noone",
+            "varName": "selected_unit",
+            "varType": 5
         },
         {
-            "id": "8ebb8a7e-bdc0-4cc0-8533-c4ef38eee122",
+            "id": "3f8a3847-d104-45d2-85a6-80ac21d43e7c",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -47,12 +47,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
-            "varName": "range",
-            "varType": 1
+            "value": "noone",
+            "varName": "fleet_map",
+            "varType": 5
         }
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "visible": false
 }

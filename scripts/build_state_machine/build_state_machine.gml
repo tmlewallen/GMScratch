@@ -1,8 +1,10 @@
 /// @desc assembles the game state machine
 
+var init = instance_create_layer(0,0,"Instances",step_init)
 var base = instance_create_layer(0,0,"Instances",step_base)
 var move = instance_create_layer(0,0,"Instances",step_move_unit)
-base.branches[0] = move
-move.branches[0] = base
-base.active = true
-return base
+ds_map_add(base.branches, STEP.MOVE_UNIT, move)
+ds_map_add(move.branches, STEP.BASE, base)
+init.start = base
+init.transition = true
+return init

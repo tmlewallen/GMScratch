@@ -33,7 +33,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "ds_map_create()",
             "varName": "branches",
             "varType": 5
         },

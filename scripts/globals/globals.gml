@@ -1,0 +1,10 @@
+enum TEAM {
+	PLAYER,
+	ENEMY,
+	NEUTRAL_1,
+	NEUTRAL_2
+}
+enum STEP {
+	BASE,
+	MOVE_UNIT
+}

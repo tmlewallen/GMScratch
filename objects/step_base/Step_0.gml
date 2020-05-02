@@ -21,10 +21,11 @@ if (c.down_p) {
 }
 
 if (c.space_p) {
+	var fc = c.fleet_controller
 	show_debug_message("What unit is at " + string(c_x) + "," + string(c_y) + "?")
-	c.selected_unit = get_occupant_at(c.grid, c_x, c_y)
-	if c.selected_unit != noone {
+	fc.selected_unit = get_occupant_at(c.grid, c_x, c_y)
+	if fc.selected_unit != noone {
 		c.cursor.visible = false
-		change_state(c, id, branches[0])
+		change_state(c, id, ds_map_find_value(branches, STEP.MOVE_UNIT))
 	}
 }

@@ -6,7 +6,8 @@
     "children": [
         "b81ebeee-9d59-4bf8-bd60-5bd40c9c1a63",
         "bee29109-8855-4c46-9395-0fbed1d06fbd",
-        "3c18dc6c-a6aa-4d96-b900-84395ebd1062"
+        "3c18dc6c-a6aa-4d96-b900-84395ebd1062",
+        "572779ea-adc1-4204-b0f0-13aaaa315039"
     ],
     "filterType": "GMObject",
     "folderName": "step",
