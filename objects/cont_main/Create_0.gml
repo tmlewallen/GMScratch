@@ -1,7 +1,7 @@
 /// @description Main Controller
 
 singleton();
-
+show_debug_overlay(true);
 left = false
 up = false
 right = false

@@ -42,9 +42,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "ds_map_create()",
             "varName": "move_range",
-            "varType": 1
+            "varType": 5
+        },
+        {
+            "id": "294f29e9-c6d0-4ea5-a141-a1e039af1ee3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "ds_map_create()",
+            "varName": "attack_range",
+            "varType": 5
         }
     ],
     "solid": false,

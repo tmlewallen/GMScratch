@@ -47,8 +47,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
-            "varName": "range",
+            "value": "2",
+            "varName": "max_range",
+            "varType": 1
+        },
+        {
+            "id": "14337393-4364-4c2a-b7a9-cfb9c9eb7751",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "min_range",
             "varType": 1
         }
     ],

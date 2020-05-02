@@ -83,6 +83,34 @@
             "value": "noone",
             "varName": "occupant",
             "varType": 5
+        },
+        {
+            "id": "83bcc6b7-8b7e-45dd-9597-03325132b49a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "attackable",
+            "varType": 3
+        },
+        {
+            "id": "dc857c75-7a84-444c-81cf-764e33250195",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "moveable",
+            "varType": 3
         }
     ],
     "solid": false,
