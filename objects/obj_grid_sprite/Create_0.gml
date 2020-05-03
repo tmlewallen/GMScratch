@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-cells_x = 15
+cells_x = 10
 cells_y = 10
 size_x = room_width
 size_y = room_height

@@ -1,28 +1,28 @@
 {
-    "id": "42389c63-a167-451a-9243-9646d0b14fea",
+    "id": "f8d66d56-2117-4e8e-bc44-b28ba6f3f431",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_grid_cell",
+    "name": "obj_meta_cell",
     "eventList": [
         {
-            "id": "b498ef09-fa02-4954-9c0d-23d1337fd8e9",
+            "id": "d6a06591-9999-4a38-b351-6eef98f0bcc6",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "42389c63-a167-451a-9243-9646d0b14fea"
+            "enumb": 4,
+            "eventtype": 6,
+            "m_owner": "f8d66d56-2117-4e8e-bc44-b28ba6f3f431"
         },
         {
-            "id": "139d9669-2f2a-4834-b7ef-760e4fced33e",
+            "id": "771141ef-4514-4446-bd92-35ca0d841564",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "42389c63-a167-451a-9243-9646d0b14fea"
+            "eventtype": 8,
+            "m_owner": "f8d66d56-2117-4e8e-bc44-b28ba6f3f431"
         }
     ],
     "maskSpriteId": "5636f952-3553-44bc-a1c7-55408d647181",
@@ -43,7 +43,21 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "d6ddddb6-b099-46d6-a37f-badd0985bcd9",
+            "id": "f5bc7806-e073-4100-995a-a3a16857232b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "weight",
+            "varType": 1
+        },
+        {
+            "id": "ecb5cbd7-ea70-4478-8816-cf01333a339c",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -53,25 +67,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "base",
-            "varType": 5
+            "varName": "visited",
+            "varType": 3
         },
         {
-            "id": "017ad44d-56c9-4e95-8dfd-348b08ed4af8",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "effect",
-            "varType": 5
-        },
-        {
-            "id": "d37380c0-5f7b-47a8-a627-f5811a783023",
+            "id": "5161992e-f14c-4271-8019-4bf3dfbee00e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -81,11 +81,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "noone",
-            "varName": "occupant",
+            "varName": "prev",
             "varType": 5
         },
         {
-            "id": "83bcc6b7-8b7e-45dd-9597-03325132b49a",
+            "id": "dc5e16cb-16a7-498a-811a-068d091a3a5d",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -95,39 +95,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "attackable",
-            "varType": 3
-        },
-        {
-            "id": "dc857c75-7a84-444c-81cf-764e33250195",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "moveable",
-            "varType": 3
-        },
-        {
-            "id": "a128fd8f-4dcc-4738-aebf-e3e2a29dd941",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "meta",
-            "varType": 5
+            "varName": "calc_weight",
+            "varType": 0
         }
     ],
     "solid": false,
-    "spriteId": "5636f952-3553-44bc-a1c7-55408d647181",
-    "visible": false
+    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "visible": true
 }

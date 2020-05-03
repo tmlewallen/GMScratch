@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "8e2f99b1-cae1-4f3b-80cc-dee8fc4b5e5a",
+            "Value": {
+                "id": "7ef9f9a9-3374-460f-80e1-c6e71cc36ebe",
+                "resourcePath": "scripts\/calculate_weights\/calculate_weights.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9770b78e-b7a9-44d4-8825-7c74ea8adea7",
             "Value": {
                 "id": "813e63e1-46e3-4884-996a-c52760908d5d",
@@ -487,10 +495,26 @@
             }
         },
         {
+            "Key": "f8d66d56-2117-4e8e-bc44-b28ba6f3f431",
+            "Value": {
+                "id": "1e3cf8a5-2c2d-4d4d-9394-7628ad9c308d",
+                "resourcePath": "objects\/obj_meta_cell\/obj_meta_cell.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fa8b458e-b232-4d21-baed-70bc37888537",
             "Value": {
                 "id": "8e1ace4d-866c-4bbc-bf80-a2531bfe3a86",
                 "resourcePath": "scripts\/globals\/globals.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fa8bf91e-eec0-446d-b0a4-7e39196ce7a6",
+            "Value": {
+                "id": "acb53cea-7f26-4c6c-a01f-90d20fbfffb8",
+                "resourcePath": "scripts\/select_weighted_range\/select_weighted_range.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -507,10 +531,12 @@
         "419a73a6-ed9c-4add-bd07-06ca3e97d1b2",
         "d951b992-1889-4bfd-8936-62969e9d1bdd",
         "506ef6cb-87a7-419f-88b2-1360afd4f3b6",
+        "fa8bf91e-eec0-446d-b0a4-7e39196ce7a6",
         "bc694fc4-949b-4e31-9d3b-ffbfef1bbc19",
         "2361258b-47b5-4cbe-86eb-3149ce1c815b",
         "7ddf31a9-5431-40cd-a8c0-e87d05750fd9",
         "ea2f00e5-6c16-4730-814f-3af2d3ce535b",
+        "8e2f99b1-cae1-4f3b-80cc-dee8fc4b5e5a",
         "bffc7c1d-22ed-45dc-9672-fbabf618682f",
         "b5a1df5b-4bf3-4d41-8e78-25103c55b6c8",
         "1fb44ad2-1b5e-4da3-88ba-f55e737f6a90",

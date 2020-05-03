@@ -5,7 +5,7 @@ if transition {
 	transition = false
 	var unit = c.fleet_controller.selected_unit
 	c.grid.cells[unit.pos_x, unit.pos_y].occupant = noone
-	move_range = select_range(c.grid, unit.pos_x, unit.pos_y, unit.max_range, unit.min_range, move_range)
+	move_range = select_weighted_range(c.grid, unit.pos_x, unit.pos_y, unit.max_range, unit.min_range, move_range)
 	var rangeSize = ds_map_size(move_range)
 	var key = ds_map_find_first(move_range)
 	for (var i = 0; i < rangeSize; i++) {
@@ -38,7 +38,7 @@ if (c.down_p) {
 }
 if not keyPress exit
 if not ds_map_exists(move_range, _mpky(u_x, u_y)) exit
-move_unit_to(c.grid, u, u_x, u_y, true)	
+move_unit_to(c.grid, u, u_x, u_y, false)	
 
 if (c.space_p) {
 	
