@@ -19,16 +19,27 @@ if (_update) {
 
 	for (x_i = 0; x_i < _cells_x; x_i++) {
 		for (y_i = 0; y_i < _cells_y; y_i++) {
-			//with(instance_create_layer((x_i * _cell_w) + offset_x + _margin_w, (y_i * _cell_h) + offset_y + _margin_h, "Instances", o_cell)) {
 			with(_cells[x_i, y_i]) {
 				_x = other.x_i
 				_y = other.y_i
 				x = (other.x_i * other._cell_w) + other._off_w + other._margin_w + (other.x_i * other._grout);
 				y = (other.y_i * other._cell_h) + other._off_h + other._margin_h + (other.y_i * other._grout);
-				image_xscale = tileScaleX; //Move to cell logic
+				image_xscale = tileScaleX; // TODO Move to cell scaling logic to elsewhere
 				image_yscale = tileScaleY;
-				//image_index = other.x_i + other.y_i mod image_number
 			}
 		}
 	}
+	with (i_pos) { 
+		var sprite = object_get_sprite(object_index)
+		var posSpriteWidth = sprite_get_width(sprite);
+		var posSpriteHeight = sprite_get_height(sprite);
+		image_xscale = other._cell_w / posSpriteWidth;
+		image_yscale = other._cell_h / posSpriteHeight;
+	}
+}
+with (i_pos) {
+	if not in_range(other, _x, _y) continue
+	var cell = get_cell_at(other, _x, _y)
+	x = cell.x
+	y = cell.y
 }

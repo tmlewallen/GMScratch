@@ -1,4 +1,12 @@
 /// @description Insert description here
-// You can write your code in this editor
-
-instance_create_layer(0,0,L_CONTROLLER, o_grid)
+// You can write your co
+singleton()
+show_debug_overlay(true)
+grid = instance_create_layer(0,0,L_CONTROLLER, o_grid)
+unit = noone
+with (instance_create_layer(0,0, L_VIEW, o_player)) {
+	depth = -1
+	_x = 5
+	_y = 5
+	other.unit = id
+}
