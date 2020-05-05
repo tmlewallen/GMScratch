@@ -7,7 +7,8 @@
         "07ec6bb3-d670-4736-84d5-b66c3107bbc9",
         "5a54590f-6cde-4038-bbd5-b63ec3a6a1d0",
         "e1b0bd42-53fe-49fd-9953-c01faa3dd4ae",
-        "2d773d8c-9202-47b3-926d-7bb328adfa4b"
+        "2d773d8c-9202-47b3-926d-7bb328adfa4b",
+        "0bec302c-dbf4-4265-a579-ea9bfc1a84f7"
     ],
     "filterType": "GMScript",
     "folderName": "grid",

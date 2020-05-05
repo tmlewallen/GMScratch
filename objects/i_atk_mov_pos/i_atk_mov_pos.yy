@@ -52,6 +52,20 @@
             "value": "0",
             "varName": "_atk_r_min",
             "varType": 1
+        },
+        {
+            "id": "2e50e89c-4a9a-4b8e-9bbe-502c9ae51545",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "_str",
+            "varType": 1
         }
     ],
     "solid": false,

@@ -2,8 +2,8 @@
 // You can write your code in this editor
 _grid_w = room_width
 _grid_h = room_height
-_cells_x = floor(_grid_w)/100
-_cells_y = floor(_grid_h)/100
+_cells_x = 50
+_cells_y = 50
 _cell_w = 0
 _cell_h = 0
 _off_w = 0
