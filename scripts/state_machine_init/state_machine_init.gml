@@ -9,4 +9,5 @@ machine._curr_nm = ""
 machine._states = ds_map_create()
 machine._transition = true
 machine._active = false
+put_state(machine, "NOOP", noop_state)
 return machine

@@ -7,3 +7,10 @@ enum CELL_VIEW {
 	MOVE = 1,
 	ATTACK = 2
 }
+
+enum TURN {
+	NOONE,
+	PLAYER,
+	ENEMY,
+	NEUTRAL
+}

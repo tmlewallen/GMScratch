@@ -29,17 +29,15 @@ if (_update) {
 			}
 		}
 	}
-	with (i_pos) { 
-		var sprite = object_get_sprite(object_index)
-		var posSpriteWidth = sprite_get_width(sprite);
-		var posSpriteHeight = sprite_get_height(sprite);
-		image_xscale = other._cell_w / posSpriteWidth;
-		image_yscale = other._cell_h / posSpriteHeight;
-	}
 }
 with (i_pos) {
 	if not in_range(other, _x, _y) continue
 	var cell = get_cell_at(other, _x, _y)
 	x = cell.x
 	y = cell.y
+	var sprite = object_get_sprite(object_index)
+	var posSpriteWidth = sprite_get_width(sprite);
+	var posSpriteHeight = sprite_get_height(sprite);
+	image_xscale = other._cell_w / posSpriteWidth;
+	image_yscale = other._cell_h / posSpriteHeight;
 }

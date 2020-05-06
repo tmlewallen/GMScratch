@@ -1,38 +1,18 @@
 {
-    "id": "727e3bef-87a3-4463-8e41-a561559d7ce3",
+    "id": "0a7f2535-937f-4ee7-beb3-fd04f99b72b7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_cont_main",
+    "name": "o_cont_fleet",
     "eventList": [
         {
-            "id": "6a3690f3-b4a2-4631-a38c-4ea79b7b107d",
+            "id": "d611e3ec-2590-489c-bfd0-ea3e5b9038b3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "727e3bef-87a3-4463-8e41-a561559d7ce3"
-        },
-        {
-            "id": "fa02b486-c01d-4e4c-b470-c490e735ffd4",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 32,
-            "eventtype": 9,
-            "m_owner": "727e3bef-87a3-4463-8e41-a561559d7ce3"
-        },
-        {
-            "id": "0af71086-5dd8-44bd-80af-4b2a42eaab99",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 40,
-            "eventtype": 9,
-            "m_owner": "727e3bef-87a3-4463-8e41-a561559d7ce3"
+            "m_owner": "0a7f2535-937f-4ee7-beb3-fd04f99b72b7"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "b4411706-d168-4071-a199-6be921c35cd7",
+            "id": "f2bafa4c-33f8-41be-9820-716e7e2bf1f0",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -63,11 +43,25 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "_grid",
+            "varName": "_turn",
+            "varType": 1
+        },
+        {
+            "id": "9a4b320a-fd39-4968-b686-4d16a46fed5c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_p_fleet",
             "varType": 5
         },
         {
-            "id": "60f264a3-2a86-4e97-ae56-ea25780095af",
+            "id": "c6aac677-e2b6-4ba8-b08d-765556a38890",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -77,11 +71,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "_cursor",
+            "varName": "_e_fleet",
             "varType": 5
         },
         {
-            "id": "8352cd9d-b1cd-4212-8b7b-8a3d3fe65382",
+            "id": "f771cd50-d373-431a-a8c3-d44e3499c419",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -91,39 +85,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "_unit",
-            "varType": 5
-        },
-        {
-            "id": "636713f2-a2ce-4f91-8f9b-b54fac0bdf1c",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "_kreg",
-            "varType": 5
-        },
-        {
-            "id": "7075d4e5-639c-4bc1-93f1-43d36482aa6c",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "_game",
+            "varName": "_n_fleet",
             "varType": 5
         }
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": false
+    "visible": true
 }

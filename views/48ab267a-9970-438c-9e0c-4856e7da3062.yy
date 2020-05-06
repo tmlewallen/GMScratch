@@ -5,7 +5,9 @@
     "name": "48ab267a-9970-438c-9e0c-4856e7da3062",
     "children": [
         "0cfc41fe-8d4f-4460-be07-0b5b93ba08b8",
-        "f2d1f096-5b4a-4c94-9b31-aa74e46ee458"
+        "f2d1f096-5b4a-4c94-9b31-aa74e46ee458",
+        "eb8a2ea6-44a7-486f-8844-136f15cdf24c",
+        "a1083469-370e-4eaa-8359-4288d34862e6"
     ],
     "filterType": "GMScript",
     "folderName": "states",

@@ -24,15 +24,9 @@ with (instance_create_layer(0,0, L_VIEW, o_cursor)) {
 	//set out of scope
 	cursor = id
 }
-var unit = noone
-with (instance_create_layer(0,0, L_VIEW, o_player)) {
-	depth = -1
-	_x = 5
-	_y = 5
-	//set out of scope
-	unit = id
-}
+
+main._kreg = instance_create_layer(0,0,L_CONTROLLER, o_input_registry)
+main._game = instance_create_layer(0,0,L_CONTROLLER, o_cont_game)
 main._grid = grid
 main._cursor = cursor
-main._unit = unit
 change_state(machine, "NOOP")
