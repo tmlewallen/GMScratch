@@ -2,17 +2,8 @@
 // You can write your co
 singleton()
 show_debug_overlay(true)
-_grid = instance_create_layer(0,0,L_CONTROLLER, o_grid)
-unit = noone
-with (instance_create_layer(0,0, L_VIEW, o_cursor)) {
-	_x = 0
-	_y = 0
-	depth = -2
-	grid = other._grid
-}
-with (instance_create_layer(0,0, L_VIEW, o_player)) {
-	depth = -1
-	_x = 5
-	_y = 5
-	other.unit = id
-}
+
+_machine = state_machine_init(id)
+put_state(_machine, "INIT", init_main)
+put_state(_machine, "NOOP", noop_state)
+start_machine(_machine, "INIT")

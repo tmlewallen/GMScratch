@@ -83,7 +83,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "noone",
-            "varName": "grid",
+            "varName": "_grid",
             "varType": 5
         }
     ],

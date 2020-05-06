@@ -2,14 +2,12 @@
 
 if not _active exit
 
-var nextState = exec_state(_ctx, _curr, _transistion, id)
+exec_state(_curr, _ctx, _transition, id)
 _transition = false
-if nextState != _curr_nm {
-	if not ds_map_exists(_states, nextState) {
-		show_message(string(nextState) + " does not exist")
-		game_end()
-	}
+if _next_state != "" {
+	validate_state_exists(id, _next_state)
 	_transition = true
-	_curr = ds_map_find_value(_states, nextState)
-	_curr_nm = nextState
+	_curr = ds_map_find_value(_states, _next_state)
+	_curr_nm = _next_state
+	_next_state = ""
 }

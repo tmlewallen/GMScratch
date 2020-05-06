@@ -57,7 +57,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "curr",
+            "varName": "_curr",
             "varType": 5
         },
         {
@@ -115,6 +115,20 @@
             "value": "0",
             "varName": "_active",
             "varType": 3
+        },
+        {
+            "id": "17ab1bc9-95d6-420f-b61d-632bcad2b38d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"\"",
+            "varName": "_next_state",
+            "varType": 2
         }
     ],
     "solid": false,
