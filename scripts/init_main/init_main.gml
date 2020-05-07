@@ -27,6 +27,7 @@ with (instance_create_layer(0,0, L_VIEW, o_cursor)) {
 
 main._kreg = instance_create_layer(0,0,L_CONTROLLER, o_input_registry)
 main._game = instance_create_layer(0,0,L_CONTROLLER, o_cont_game)
+main._game._main = main //wut 
 main._grid = grid
 main._cursor = cursor
 change_state(machine, "NOOP")

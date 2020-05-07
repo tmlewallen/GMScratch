@@ -19,7 +19,7 @@ with (instance_create_layer(0,0,L_VIEW, o_enemy)) {
 	_x = 5
 	_y = 5
 }
-_p_fleet = players
-_e_fleet = enemies
-
-change_state(machine, "NOOP")
+fleet._p_fleet = players
+fleet._e_fleet = enemies
+fleet._turn = TURN.PLAYER
+change_state(machine, "FLEET_TURN")

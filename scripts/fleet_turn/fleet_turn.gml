@@ -7,7 +7,16 @@ var fleet = argument0
 var transition = argument1
 var machine = argument2
 
-if transition exit
+if transition {
+	for (var i = 0; i < array_length_1d(fleet._p_fleet); i++) {
+		fleet._p_fleet[i]._active = true
+	}
+	for (var i = 0; i < array_length_1d(fleet._e_fleet); i++) {
+		fleet._e_fleet[i]._active = true
+	}
+	show_debug_message(string(fleet._turn) + "'s Turn")
+	exit
+}
 
 var units = noone
 switch (fleet._turn) {
@@ -26,5 +35,6 @@ for (var i = 0; i < array_length_1d(units); i++) {
 	if units[i]._active	allUnitsMoved = false; break
 }
 if allUnitsMoved {
-	change_state(machine, "CHANGE_TURN")
+	unblock(fleet._game)
+	change_to_wait_state(fleet, machine, "FLEET_TURN")
 }

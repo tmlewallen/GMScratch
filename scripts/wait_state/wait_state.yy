@@ -1,8 +1,8 @@
 {
-    "id": "bccba1d5-fabb-4451-af58-7366bfb645ef",
+    "id": "43f32df2-ace0-4f4a-b1bd-67dda90bc065",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "change_turn",
+    "name": "wait_state",
     "IsCompatibility": false,
     "IsDnD": false
 }

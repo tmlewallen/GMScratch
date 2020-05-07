@@ -10,4 +10,5 @@ machine._states = ds_map_create()
 machine._transition = true
 machine._active = false
 put_state(machine, "NOOP", noop_state)
+put_state(machine, "WAIT", wait_state)
 return machine

@@ -45,6 +45,20 @@
             "value": "0",
             "varName": "_fleet",
             "varType": 5
+        },
+        {
+            "id": "088876ef-ad42-465e-b420-4982fa36c978",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_main",
+            "varType": 5
         }
     ],
     "solid": false,

@@ -87,6 +87,20 @@
             "value": "0",
             "varName": "_n_fleet",
             "varType": 5
+        },
+        {
+            "id": "5053066a-5991-43f3-9bd4-3c488e1cdd35",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_game",
+            "varType": 5
         }
     ],
     "solid": false,
