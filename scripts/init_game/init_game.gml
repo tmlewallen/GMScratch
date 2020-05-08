@@ -7,6 +7,24 @@ var game = argument0
 var transition = argument1
 var machine = argument2
 
-game._fleet = instance_create_layer(0,0,L_CONTROLLER, o_cont_fleet)
-game._fleet._game = game
-change_to_wait_state(game, machine, "CHANGE_TURN")
+if game._main == noone exit
+
+var grid = game._main._grid
+
+
+//To prevent weird conflicts with moving multiple units coming from the 
+//same position in before they 'occupy' anything, this can move them all without occupying
+//then come back and move them again to occupy
+var enemies = []
+enemies[0] = instance_create_layer(0,0,L_VIEW, o_enemy)
+move_unit_to(grid, enemies[0], 5,5, true)
+
+var players = []
+players[0] = instance_create_layer(0,0,L_VIEW, o_player)
+move_unit_to(grid, players[0], 0,0, true)
+
+game._players = players
+game._enemies = enemies
+game._turn = TURN.PLAYER
+
+change_state(machine, "CHANGE_TURN")

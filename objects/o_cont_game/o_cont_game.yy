@@ -33,20 +33,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "8f97efdc-1f6f-47d8-938e-84e89ce510de",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "_fleet",
-            "varType": 5
-        },
-        {
             "id": "088876ef-ad42-465e-b420-4982fa36c978",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -56,8 +42,50 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "noone",
             "varName": "_main",
+            "varType": 5
+        },
+        {
+            "id": "1172f87f-fa33-45d0-b05b-0d19f1d3bf0d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_turn",
+            "varType": 1
+        },
+        {
+            "id": "0c82def4-84bb-412e-b3cb-19d94f72c76b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_players",
+            "varType": 5
+        },
+        {
+            "id": "0e3c8040-456d-4bd2-98fc-cf0ad509c8fe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_enemies",
             "varType": 5
         }
     ],

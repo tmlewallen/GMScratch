@@ -111,6 +111,20 @@
             "value": "noone",
             "varName": "_meta",
             "varType": 5
+        },
+        {
+            "id": "c8af4566-a1e1-43fa-bece-0dcbfbc7318d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "_occupant",
+            "varType": 5
         }
     ],
     "solid": false,

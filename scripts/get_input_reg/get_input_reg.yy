@@ -1,8 +1,8 @@
 {
-    "id": "9b8378fb-c168-4e4b-b41f-4d1d973724b2",
+    "id": "3ce34b3f-8331-4ef9-a218-aabdbc0e9de7",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "init_fleet",
+    "name": "get_input_reg",
     "IsCompatibility": false,
     "IsDnD": false
 }

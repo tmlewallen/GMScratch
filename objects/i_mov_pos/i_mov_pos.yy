@@ -36,6 +36,20 @@
             "value": "4",
             "varName": "_mov_r",
             "varType": 1
+        },
+        {
+            "id": "485c471d-f479-4330-bd0a-0dd93b12322c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_input_reg",
+            "varType": 5
         }
     ],
     "solid": false,
