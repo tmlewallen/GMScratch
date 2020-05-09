@@ -129,6 +129,20 @@
             "value": "\"\"",
             "varName": "_next_state",
             "varType": 2
+        },
+        {
+            "id": "aeeef5a2-185e-43b5-892e-e4a37d41fa30",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_var",
+            "varType": 5
         }
     ],
     "solid": false,

@@ -8,12 +8,6 @@ var transition = argument1
 var machine = argument2
 
 if transition {
-	for (var i = 0; i < array_length_1d(game._players); i++) {
-		game._players[i]._active = TURN.PLAYER == game._turn
-	}
-	for (var i = 0; i < array_length_1d(game._enemies); i++) {
-		game._enemies[i]._active = TURN.PLAYER != game._turn
-	}
 	show_debug_message(string(game._turn) + "'s Turn")
 	exit
 }
@@ -37,4 +31,6 @@ for (var i = 0; i < array_length_1d(units); i++) {
 }
 if allUnitsMoved {
 	change_state(machine, "CHANGE_TURN")
+} else {
+	change_state(machine, "SELECT_UNIT")	
 }

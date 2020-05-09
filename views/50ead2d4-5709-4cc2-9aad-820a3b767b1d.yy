@@ -4,16 +4,8 @@
     "mvc": "1.1",
     "name": "50ead2d4-5709-4cc2-9aad-820a3b767b1d",
     "children": [
-        "ef867c73-e0a4-42c6-9dee-d11bdff4209a",
-        "7f19d7c6-0d9a-4c2c-aefd-42f1ed156d1b",
-        "ae3234e1-6d9a-4f80-a145-4fe391459ab8",
-        "2ecdbae3-b686-4404-b767-96c21814fcf5",
-        "54fff100-526f-49c0-90af-73506a3fdadc",
-        "ed929e39-d4c2-4fd6-8765-8d61a6a0922b",
-        "930803fb-1bd0-4a9d-a219-766c308c9ada",
-        "b9c27c16-f009-4624-9ceb-81c939d83bd0",
         "48ab267a-9970-438c-9e0c-4856e7da3062",
-        "a7f89d58-3b8d-4ba4-8faf-ba83221eeba6"
+        "ff1b2ee2-eabc-4a53-b619-76d80c1484a8"
     ],
     "filterType": "GMScript",
     "folderName": "state_machine",

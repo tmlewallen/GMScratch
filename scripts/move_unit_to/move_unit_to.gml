@@ -17,7 +17,15 @@ if not instance_exists(grid) or grid.object_index != o_grid {
 }
 
 if not in_range(grid, xx, yy) {
-	show_message("Can't move there, pos not on grid")
+	show_debug_message("Can't move there, pos not on grid")
+	return false
+}
+
+var origin = get_cell_at(grid, unit._x, unit._y)
+var destination = get_cell_at(grid, xx, yy)
+
+if occupy and destination._occupant != noone {
+	show_debug_message("Someone's in here, don't come in")
 	return false
 }
 
@@ -25,14 +33,6 @@ unit._x = xx
 unit._y = yy
 
 if not occupy return true
-
-var origin = get_cell_at(grid, unit._x, unit._y)
-var destination = get_cell_at(grid, xx, yy)
-
-if destination._occupant != noone {
-	show_message("Someone's in here, don't come in")
-	return false
-}
 
 origin._occupant = noone
 destination._occupant = unit

@@ -6,12 +6,14 @@ _right   = false
 _up      = false
 _down    = false
 _space   = false
+_esc     = false
 
 _left_d  = false
 _right_d = false
 _up_d    = false
 _down_d  = false
 _space_d = false
+_esc_d   = false
 
 _q       = false
 _q_p     = false

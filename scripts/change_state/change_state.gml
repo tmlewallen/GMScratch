@@ -5,4 +5,5 @@
 var machine = argument0
 var stateName = argument1
 
+show_debug_message("Moving to " + stateName)
 machine._next_state = stateName

@@ -87,6 +87,34 @@
             "value": "0",
             "varName": "_enemies",
             "varType": 5
+        },
+        {
+            "id": "a8636cf5-0732-4896-b2af-cbe360b1ee08",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"SELECTED\"",
+            "varName": "_var_key_selected",
+            "varType": 2
+        },
+        {
+            "id": "9b25541d-2664-417f-b660-a5ec1f81df52",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"CELL_RANGE\"",
+            "varName": "_var_key_cell_range",
+            "varType": 2
         }
     ],
     "solid": false,

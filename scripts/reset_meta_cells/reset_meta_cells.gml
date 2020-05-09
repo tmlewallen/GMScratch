@@ -9,7 +9,6 @@ if not instance_exists(grid) or grid.object_index != o_grid {
 for (var xx = 0; xx < grid._cells_x; xx++) {
 	for (var yy = 0; yy < grid._cells_y; yy++){ 
 		with(get_cell_at(grid, xx, yy)) {
-			image_index = CELL_VIEW.NEUTRAL
 			_meta._prev = noone
 			_meta._sum = INF
 			_meta._visited = false
