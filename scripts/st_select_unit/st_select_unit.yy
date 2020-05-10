@@ -1,8 +1,8 @@
 {
-    "id": "dd4e034a-bd85-4008-bc4c-f7e4f79989e3",
+    "id": "30b056f6-edc9-422f-8fc5-7d4b70ef964e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "init_game",
+    "name": "st_select_unit",
     "IsCompatibility": false,
     "IsDnD": false
 }

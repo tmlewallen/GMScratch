@@ -7,6 +7,8 @@ var grid = argument0
 var xx = argument1
 var yy = argument2
 
+if is_undefined(grid) return [0,0]
+
 if not instance_exists(grid) or grid.object_index != o_grid {
 	show_message("Invalid Grid passed to pos_to_grid")
 	game_end()

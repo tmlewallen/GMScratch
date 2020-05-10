@@ -1,8 +1,8 @@
 {
-    "id": "d093698a-3e81-48bc-9b92-b7457acdc57c",
+    "id": "dd4e034a-bd85-4008-bc4c-f7e4f79989e3",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "deactivate_unit",
+    "name": "st_init_game",
     "IsCompatibility": false,
     "IsDnD": false
 }

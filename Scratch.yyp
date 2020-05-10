@@ -82,7 +82,7 @@
             "Key": "0fcbec79-74d5-4317-8514-b9d0b92a683d",
             "Value": {
                 "id": "aaa8ed43-a826-420a-a14f-ca953c98574b",
-                "resourcePath": "scripts\/move_unit\/move_unit.yy",
+                "resourcePath": "scripts\/st_move_unit\/st_move_unit.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -162,7 +162,7 @@
             "Key": "30b056f6-edc9-422f-8fc5-7d4b70ef964e",
             "Value": {
                 "id": "ebc274fa-1c29-484c-9eba-62fc20eae874",
-                "resourcePath": "scripts\/select_unit\/select_unit.yy",
+                "resourcePath": "scripts\/st_select_unit\/st_select_unit.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -170,7 +170,7 @@
             "Key": "3bb25b74-9349-479e-8d2b-9345e2a5a196",
             "Value": {
                 "id": "9e120372-c781-4236-927d-69357ee30481",
-                "resourcePath": "scripts\/attack_unit\/attack_unit.yy",
+                "resourcePath": "scripts\/st_attack_unit\/st_attack_unit.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -194,7 +194,7 @@
             "Key": "43f32df2-ace0-4f4a-b1bd-67dda90bc065",
             "Value": {
                 "id": "d066bb3b-c9b2-4767-97b4-de6f812196b7",
-                "resourcePath": "scripts\/wait_state\/wait_state.yy",
+                "resourcePath": "scripts\/st_wait\/st_wait.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -202,7 +202,7 @@
             "Key": "47221802-032e-4841-bf3f-e4234219f4c7",
             "Value": {
                 "id": "34de546a-5811-4248-b29c-f6e5921ed3b2",
-                "resourcePath": "scripts\/init_main\/init_main.yy",
+                "resourcePath": "scripts\/st_init_main\/st_init_main.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -522,7 +522,7 @@
             "Key": "bccba1d5-fabb-4451-af58-7366bfb645ef",
             "Value": {
                 "id": "b94c7566-7de0-42b7-a0b4-613cbac7a9b8",
-                "resourcePath": "scripts\/change_turn\/change_turn.yy",
+                "resourcePath": "scripts\/st_change_turn\/st_change_turn.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -570,7 +570,7 @@
             "Key": "c70dd89e-9948-442f-9ede-23801fd6970b",
             "Value": {
                 "id": "0d5267bb-867b-41ef-8c58-5217cb29aeee",
-                "resourcePath": "scripts\/check_map\/check_map.yy",
+                "resourcePath": "scripts\/st_check_map\/st_check_map.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -626,7 +626,7 @@
             "Key": "d093698a-3e81-48bc-9b92-b7457acdc57c",
             "Value": {
                 "id": "bd49bee9-73dc-4cf0-9de2-db01cc2e02b8",
-                "resourcePath": "scripts\/deactivate_unit\/deactivate_unit.yy",
+                "resourcePath": "scripts\/st_deactivate_unit\/st_deactivate_unit.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -647,10 +647,18 @@
             }
         },
         {
+            "Key": "daa73e2c-6c16-42d1-851b-a1b54881708b",
+            "Value": {
+                "id": "f97c8d3d-84bb-479e-8665-206f8273d4c0",
+                "resourcePath": "sprites\/s_dialog\/s_dialog.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dd4e034a-bd85-4008-bc4c-f7e4f79989e3",
             "Value": {
                 "id": "df2f5c5a-e8e4-4ee9-8130-209bcfb532ff",
-                "resourcePath": "scripts\/init_game\/init_game.yy",
+                "resourcePath": "scripts\/st_init_game\/st_init_game.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -722,7 +730,7 @@
             "Key": "f2d1f096-5b4a-4c94-9b31-aa74e46ee458",
             "Value": {
                 "id": "5eae22df-36c8-4a7d-bc41-22598bef4904",
-                "resourcePath": "scripts\/noop_state\/noop_state.yy",
+                "resourcePath": "scripts\/st_noop\/st_noop.yy",
                 "resourceType": "GMScript"
             }
         },

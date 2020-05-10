@@ -1,8 +1,8 @@
 {
-    "id": "3bb25b74-9349-479e-8d2b-9345e2a5a196",
+    "id": "43f32df2-ace0-4f4a-b1bd-67dda90bc065",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "attack_unit",
+    "name": "st_wait",
     "IsCompatibility": false,
     "IsDnD": false
 }

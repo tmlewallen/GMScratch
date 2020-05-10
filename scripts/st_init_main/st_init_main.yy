@@ -1,8 +1,8 @@
 {
-    "id": "0fcbec79-74d5-4317-8514-b9d0b92a683d",
+    "id": "47221802-032e-4841-bf3f-e4234219f4c7",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "move_unit",
+    "name": "st_init_main",
     "IsCompatibility": false,
     "IsDnD": false
 }

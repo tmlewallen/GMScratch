@@ -1,8 +1,8 @@
 {
-    "id": "47221802-032e-4841-bf3f-e4234219f4c7",
+    "id": "bccba1d5-fabb-4451-af58-7366bfb645ef",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "init_main",
+    "name": "st_change_turn",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,8 +1,8 @@
 {
-    "id": "30b056f6-edc9-422f-8fc5-7d4b70ef964e",
+    "id": "d093698a-3e81-48bc-9b92-b7457acdc57c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "select_unit",
+    "name": "st_deactivate_unit",
     "IsCompatibility": false,
     "IsDnD": false
 }
