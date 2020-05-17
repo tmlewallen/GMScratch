@@ -14,5 +14,6 @@ with (instance_create_layer(xx, yy, L_VIEW, o_menu)) {
 	_options = options
 	_machine = machine
 	menu = id
+	depth = -50
 	event_user(0)
 }
