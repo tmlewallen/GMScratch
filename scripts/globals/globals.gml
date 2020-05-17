@@ -15,3 +15,10 @@ enum TURN {
 	ENEMY,
 	NEUTRAL
 }
+
+enum PADDING {
+	TOP,
+	RIGHT,
+	BOTTOM,
+	LEFT
+}

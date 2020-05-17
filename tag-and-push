@@ -1,0 +1,7 @@
+#!/bin/bash
+
+NDX=$1
+VER=$2
+
+git tag `date "+ %Y-%m-%d"_$NDX-$VER`
+git push --tags && git push
