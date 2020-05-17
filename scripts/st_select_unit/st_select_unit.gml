@@ -19,7 +19,8 @@ if input._space_d {
 	var unit = get_unit_at(grid, cursor._x, cursor._y)
 	if unit != noone and unit._active {
 		put_var(machine, game._var_key_selected, unit)
-		change_state(machine, "MOVE_UNIT")	
+		put_var(machine, game._var_key_options, ["Move"])
+		change_state(machine, "SHOW_OPTIONS")	
 	}
 }
 

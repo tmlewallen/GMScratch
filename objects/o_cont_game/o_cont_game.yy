@@ -115,6 +115,20 @@
             "value": "\"CELL_RANGE\"",
             "varName": "_var_key_cell_range",
             "varType": 2
+        },
+        {
+            "id": "397e2ecc-fc89-424b-8fed-39c87906e61f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"OPTIONS\"",
+            "varName": "_var_key_options",
+            "varType": 2
         }
     ],
     "solid": false,

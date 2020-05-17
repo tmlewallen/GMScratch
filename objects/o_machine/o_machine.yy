@@ -157,6 +157,20 @@
             "value": "\"\"",
             "varName": "_signal",
             "varType": 2
+        },
+        {
+            "id": "d56ceb39-0350-4e2b-9b2a-91867205bfdc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "_signal_source",
+            "varType": 5
         }
     ],
     "solid": false,

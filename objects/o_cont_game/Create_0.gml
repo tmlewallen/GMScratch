@@ -8,5 +8,6 @@ put_state(_machine, "SELECT_UNIT", st_select_unit)
 put_state(_machine, "MOVE_UNIT", st_move_unit)
 put_state(_machine, "ATTACK_UNIT", st_attack_unit)
 put_state(_machine, "DEACTIVATE_UNIT", st_deactivate_unit)
+put_state(_machine, "SHOW_OPTIONS", st_show_options)
 
 start_machine(_machine, "INIT")

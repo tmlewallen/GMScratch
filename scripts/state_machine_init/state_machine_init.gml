@@ -12,4 +12,5 @@ machine._active = false
 machine._var = ds_map_create()
 put_state(machine, "NOOP", st_noop)
 put_state(machine, "WAIT", st_wait)
+put_state(machine, "WAIT_FOR_SIGNAL", st_wait_for_signal)
 return machine
