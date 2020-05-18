@@ -9,10 +9,7 @@ var yy = argument2
 
 if is_undefined(grid) return [0,0]
 
-if not instance_exists(grid) or grid.object_index != o_grid {
-	show_message("Invalid Grid passed to pos_to_grid")
-	game_end()
-}
+assert_type(grid, o_grid, "Grid must be a grid")
 
 var wLowerBound = grid._margin_w + grid._off_w
 var wUpperBound = wLowerBound + (grid._cell_w * grid._cells_x + ((grid._cells_x - 1) * grid._grout))

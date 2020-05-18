@@ -7,6 +7,8 @@ var game = argument0
 var transition = argument1
 var machine = argument2
 
+assert_st_input(game, machine, o_game)
+
 if transition {
 	show_debug_message(string(game._turn) + "'s Turn")
 	exit
@@ -30,7 +32,7 @@ for (var i = 0; i < array_length_1d(units); i++) {
 	if units[i]._active	allUnitsMoved = false; break
 }
 if allUnitsMoved {
-	change_state(machine, "CHANGE_TURN")
+	change_state(machine, ST_CHANGE_TURN)
 } else {
-	change_state(machine, "SELECT_UNIT")	
+	change_state(machine, ST_SELECT_UNIT)	
 }

@@ -6,7 +6,6 @@ var machine = argument0
 var stateName = argument1
 var states = machine._states
 
-if not ds_map_exists(states, stateName) {
-	show_message("Step " + stateName + " does not exist for machine " + string(machine))
-	game_end()
-}
+assert(ds_map_exists(states, stateName), 
+	concat("Step ", stateName, " does not exist for machine ", string(machine))
+)

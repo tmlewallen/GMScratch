@@ -7,18 +7,20 @@ var game = argument0
 var transition = argument1
 var machine = argument2
 
-var grid = game._main._grid
-var selected = get_var(machine, game._var_key_selected)
+assert_st_input(game, machine, o_game)
+
+var grid = get_grid()
+var selected = get_var(machine, V_K_GAME__SELECTED)
 
 if not instance_exists(selected) {
 	show_debug_message("Selected unit does not exist") 
-	change_state(machine, "CHECK_MAP")
+	change_state(machine, ST_CHECK_MAP)
 }
 
 if transition {
 	apply_view_to_grid(grid, CELL_VIEW.NEUTRAL)
 	reset_meta_cells(grid)
-	var atkRange = select_range(grid, selected._atk_r_max, selected._x, selected._y)
+	var atkRange = select_range(grid, selected._atk_range, selected._x, selected._y)
 	var targets = []
 	var ndx = 0
 	for (var i = 0; i < array_length_1d(atkRange); i++) {
@@ -28,26 +30,26 @@ if transition {
 		targets[ndx++] = cell
 	}
 	if array_length_1d(targets) == 0 {
-		change_state(machine, "DEACTIVATE_UNIT")
+		change_state(machine, ST_DEACTIVATE_UNIT)
 		exit
 	}
-	apply_view_to_cells(game._main._grid, targets, CELL_VIEW.ATTACK)
-	put_var(machine, game._var_key_cell_range, targets)
+	apply_view_to_cells(grid, targets, CELL_VIEW.ATTACK)
+	put_var(machine, V_K_GAME__CELL_RANGE, targets)
 	exit
 }
 
-var input = game._main._input_reg
+var input = get_input_reg()
 
-if not input._space_d exit
+if not input._space_p exit
 
-var cursor = game._main._cursor
-var range = get_var(machine, game._var_key_cell_range)
-show_debug_message("Cursor: " + string(cursor._x) + "," + string(cursor._y))
+var cursor = get_cell_selector()
+var range = get_var(machine, V_K_GAME__CELL_RANGE)
+dbg(concat("Cursor: ", string(cursor._x), ",", string(cursor._y)))
 var cell = find_cell_in_range(range, cursor._x, cursor._y) //If cursor is on moveable cell
 
 if cell == noone exit
 
 show_debug_message("cells attacking")
 apply_view_to_grid(grid, CELL_VIEW.NEUTRAL)
-clear_var(machine, game._var_key_cell_range)
-change_state(machine, "DEACTIVATE_UNIT")
+clear_var(machine, V_K_GAME__CELL_RANGE)
+change_state(machine, ST_DEACTIVATE_UNIT)

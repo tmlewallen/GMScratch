@@ -8,11 +8,11 @@ var yy = argument1
 var machine = argument2
 var options = argument3
 var menu = noone;
-with (instance_create_layer(xx, yy, L_VIEW, o_menu)) {
+with (instance_create_layer(xx, yy, L_DIALOG, o_menu)) {
 	x = xx
 	y = yy
 	_options = options
-	_machine = machine
+	_target = machine
 	menu = id
 	depth = -50
 	event_user(0)

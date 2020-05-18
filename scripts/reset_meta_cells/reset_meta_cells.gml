@@ -1,10 +1,8 @@
 /// @desc resets meta cells in a grid to initial state
 /// @param {o_grid} grid grid to operate on
 var grid = argument0
-if not instance_exists(grid) or grid.object_index != o_grid {
-	show_message("Argument in select_range is not a grid.")
-	game_end()	
-}
+
+assert_type(grid, o_grid, "Grid must be a grid")
 
 for (var xx = 0; xx < grid._cells_x; xx++) {
 	for (var yy = 0; yy < grid._cells_y; yy++){ 

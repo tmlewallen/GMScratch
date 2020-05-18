@@ -36,34 +36,6 @@
             "value": "0",
             "varName": "_machine",
             "varType": 5
-        },
-        {
-            "id": "75139aef-8c16-435a-9bde-b292f06dbad4",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "_waiting",
-            "varType": 3
-        },
-        {
-            "id": "4e7e0183-81bb-4831-b518-6ca8bcedad67",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "_post_wait",
-            "varType": 2
         }
     ],
     "solid": false,

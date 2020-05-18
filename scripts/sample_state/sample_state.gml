@@ -7,3 +7,4 @@ var ctx = argument0
 var transition = argument1
 var machine = argument2
 
+//assert_st_input()

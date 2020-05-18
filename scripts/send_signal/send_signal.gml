@@ -7,10 +7,12 @@ var machine = argument0
 var signal = argument1
 var source = argument2
 
-if signal == "" {
-	show_message("Cannot send empty signal")
-	game_end()
+if signal == NO_SIGNAL {
+	terminate("Cannot send empty signal")
 }
 
 machine._signal = signal
-machine._signal_source = source //could use Id here to imply caller, but maybe we'll want to spoof it in the future in some hacky madness
+//could use 'id' here (or self or whatever) to imply caller of this script as source
+// that would be elegant
+// but maybe we'll want to spoof it in the future in some hacky madness
+machine._signal_source = source 

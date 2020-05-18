@@ -16,7 +16,7 @@ var adjX = x;
 var adjY = y;
 for (var i = 0; i < array_length_1d(_options); i++) {
 	var text = _options[i]
-	with (instance_create_layer(adjX, adjY, L_VIEW, o_menu_option)) {
+	with (instance_create_layer(adjX, adjY, L_DIALOG, o_menu_option)) {
 		_text = text
 		_h = other._option_height
 		_w = other._w

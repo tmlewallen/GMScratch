@@ -5,9 +5,6 @@
 var xx = argument0
 var yy = argument1
 
-var cursor = instance_find(o_cursor, 0) //There should only be one
-if cursor == noone {
-	show_message("No cursor Found")
-	game_end()
-}
+var cursor = global._cursor
+if cursor == noone terminate("No cursor Found")
 return cursor._x == xx and cursor._y == yy

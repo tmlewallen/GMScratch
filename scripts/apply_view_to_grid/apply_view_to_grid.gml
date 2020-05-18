@@ -6,8 +6,7 @@ var grid = argument0
 var view = argument1
 
 if view > 2 {
-	show_message("Not a valid view")
-	game_end()
+	terminate("Not a valid view")
 }
 
 for (var xx = 0; xx < grid._cells_x; xx++) {

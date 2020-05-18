@@ -26,8 +26,8 @@ if point_in_rectangle(mx, my, x, y, x + _w, y + _h) {
 	}
 }
 if mouseOver != noone {
-	show_debug_message(mouseOver._text)	
-	if keyboard_check_pressed(vk_space) { 
-		send_signal(_machine, mouseOver._text, id)	
+	var input_reg = get_input_reg()
+	if input_reg._space_p { 
+		send_signal(_target, mouseOver._text, id)	
 	}
 }

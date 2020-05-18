@@ -9,10 +9,8 @@ var range = argument1
 var xx = argument2
 var yy = argument3
 
-if not instance_exists(grid) or grid.object_index != o_grid {
-	show_message("Argument in select_range is not a grid.")
-	game_end()	
-}
+
+assert_type(grid, o_grid, "Grid must be a grid")
 
 var origin = get_cell_at(grid, xx, yy)
 origin._meta._sum = 0

@@ -11,12 +11,10 @@ var xx = argument2
 var yy = argument3
 var occupy = argument4
 
-if not instance_exists(grid) or grid.object_index != o_grid {
-	show_message("That's not a grid you're trying to move to")
-	game_end()
-}
 
-if not in_range(grid, xx, yy) {
+assert_type(grid, o_grid, "That's not a grid you're trying to move to")
+
+if not valid_pos(grid, xx, yy) {
 	show_debug_message("Can't move there, pos not on grid")
 	return false
 }

@@ -171,6 +171,34 @@
             "value": "noone",
             "varName": "_signal_source",
             "varType": 5
+        },
+        {
+            "id": "ea5471e2-54e8-4bf7-929c-d22ece13b5e0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"\"",
+            "varName": "_post_signal",
+            "varType": 2
+        },
+        {
+            "id": "1091028b-b9ff-44e8-91d6-177eb7cf054e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "\"\"",
+            "varName": "_signal_var_key",
+            "varType": 2
         }
     ],
     "solid": false,

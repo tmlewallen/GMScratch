@@ -7,6 +7,8 @@ var game = argument0
 var transition = argument1
 var machine = argument2
 
+assert_st_input(game, machine, o_game)
+
 if transition {
 	show_debug_message("Changing Turn")
 	exit
@@ -28,4 +30,4 @@ for (var i = 0; i < array_length_1d(game._enemies); i++) {
 	game._enemies[i]._active = TURN.PLAYER != game._turn
 }
 
-change_state(machine, "CHECK_MAP")
+change_state(machine, ST_CHECK_MAP)

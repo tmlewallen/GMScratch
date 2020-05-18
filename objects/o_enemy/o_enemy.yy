@@ -1,5 +1,5 @@
 {
-    "id": "d119d1f9-16e2-4e6e-badb-d283f5f5812a",
+    "id": "84fcd280-2ade-497c-a5cc-f0c4a7609e1b",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "o_enemy",
@@ -8,7 +8,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "f8a18459-768b-4e68-abed-b2af2a71235f",
+    "parentObjectId": "6bce9edc-3d8a-41ec-90ea-83131134a90e",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

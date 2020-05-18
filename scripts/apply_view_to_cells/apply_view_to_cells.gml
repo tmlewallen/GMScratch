@@ -9,7 +9,7 @@ var cells = argument1
 var viewNdx = argument2
 
 if viewNdx > 2 {
-	show_debug_message("Invalid cell view") 
+	dbg("Invalid cell view") 
 	return
 }
 for (var i = 0; i < array_length_1d(cells); i++) {

@@ -7,6 +7,8 @@ var game = argument0
 var transition = argument1
 var machine = argument2
 
-var unit = get_var(machine, game._var_key_selected)
+assert_st_input(game, machine, o_game)
+
+var unit = get_var(machine, V_K_GAME__SELECTED)
 unit._active = false
-change_state(machine, "CHECK_MAP")
+change_state(machine, ST_CHECK_MAP)

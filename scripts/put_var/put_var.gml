@@ -7,6 +7,6 @@ var machine = argument0
 var key = argument1
 var val = argument2
 
+clear_var(machine, key)
 var map = machine._var
-ds_map_delete(map, key)
 ds_map_add(map, key, val)

@@ -3,12 +3,10 @@
 /// @param {string} step step to begin at
 
 var machine = argument0
-var stateName = argument1
 
-if not instance_exists(machine) or machine.object_index != o_machine {
-	show_message("Invalid state machine - can't start")
-	game_end()
-}
+assert_type(machine, o_machine, "Invalid state machine - cannot start")
+
+var stateName = ST_INIT
 validate_state_exists(machine, stateName)
 var states = machine._states
 
