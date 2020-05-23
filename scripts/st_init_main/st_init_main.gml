@@ -25,7 +25,7 @@ with (instance_create_layer(0,0, L_VIEW, o_cell_selector)) {
 	//set out of scope
 	selector = id
 }
-window_set_cursor(cr_none)
+//window_set_cursor(cr_none)
 main._grid = grid
 main._cursor = cursor
 main._selector = selector

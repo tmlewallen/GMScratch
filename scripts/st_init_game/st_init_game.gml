@@ -58,14 +58,14 @@ with (instance_create_layer(0,0,L_VIEW, o_player)) {
 
 for (var i = 0; i < array_length_1d(players); i++) {
 	var player = players[i]
-	move_unit_to(grid, player, player._x, player._y, false)
-	move_unit_to(grid, player, player._x, player._y, true)
+	move_unit_to_x_y(player, player._x, player._y, false)
+	move_unit_to_x_y(player, player._x, player._y, true)
 }
 
 for (var i = 0; i < array_length_1d(players); i++) {
 	var enemy = enemies[i]
-	move_unit_to(grid, enemy, enemy._x, enemy._y, false)
-	move_unit_to(grid, enemy, enemy._x, enemy._y, true)
+	move_unit_to_x_y(enemy, enemy._x, enemy._y, false)
+	move_unit_to_x_y(enemy, enemy._x, enemy._y, true)
 }
 
 game._players = players

@@ -10,7 +10,7 @@ var objNdx = argument[ndx++]
 
 var msg = ""
 if argument_count > ndx {
-	msg = argument[argument_count-1]	
+	msg = argument[ndx++]	
 }
 	
 if msg == "" { 
@@ -24,4 +24,4 @@ if msg = "" {
 	msg = concat("Object Index mismatch. Called in ", string(id))	
 }
 
-assert(instance.object_index == objNdx, msg)
+assert(instance_of(instance, objNdx), msg)

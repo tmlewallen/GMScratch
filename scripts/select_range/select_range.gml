@@ -4,15 +4,22 @@
 /// @param {int} x x position of origin cell
 /// @param {int} y y position of origin cell
 
-var grid = argument0
-var range = argument1
-var xx = argument2
-var yy = argument3
+var ndx = 0
+var range = argument[ndx++]
+var xx = argument[ndx++]
+var yy = argument[ndx++]
+
+var grid = noone
+if argument_count > ndx {
+	grid = argument[ndx++]	
+} else {
+	grid = get_grid()	
+}
 
 
 assert_type(grid, o_grid, "Grid must be a grid")
 
-var origin = get_cell_at(grid, xx, yy)
+var origin = get_cell_at_x_y(xx, yy, grid)
 origin._meta._sum = 0
 origin._meta._visited = true
 var closedSet = []

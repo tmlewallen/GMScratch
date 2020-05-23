@@ -11,7 +11,7 @@ if view > 2 {
 
 for (var xx = 0; xx < grid._cells_x; xx++) {
 	for (var yy = 0; yy < grid._cells_y; yy++){ 
-		with(get_cell_at(grid, xx, yy)) {
+		with(get_cell_at_x_y(xx, yy, grid)) {
 			image_index = view
 		}
 	}

@@ -13,12 +13,9 @@ if transition {
 	clear_var(machine, V_K_GAME__SELECTED)	
 }
 
-var input = get_input_reg()
-
-if input._space_p {
-	var cursor = get_cell_selector()
-	var grid = get_grid()
-	var unit = get_unit_at(grid, cursor._x, cursor._y)
+if get_confirm_pressed() {
+	var cs = get_cell_selector()
+	var unit = get_unit_at_i_pos(cs)
 	if unit != noone and unit._active {
 		put_var(machine, V_K_GAME__SELECTED, unit)
 		put_var(machine, V_K_GAME__OPTIONS, ["Move"])

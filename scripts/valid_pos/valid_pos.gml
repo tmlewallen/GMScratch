@@ -1,12 +1,19 @@
 /// @desc Returns true/false if an x,y pos is a valid position in given grid
-/// @param {grid} grid grid
 /// @param {int} x x position
 /// @param {int} y y position
+/// @param {o_grid} optional_grid grid
 
-var grid = argument0
-var xx = argument1
-var yy = argument2
+var ndx = 0
+var xx = argument[ndx++]
+var yy = argument[ndx++]
 
-assert_type(grid, o_grid)
+var grid = noone
+if argument_count > ndx {
+	grid = argument[ndx++]
+} else {
+	grid = get_grid()
+}
+
+assert_type(grid, o_grid, "Not a grid. valid_pos")
 
 return xx >= 0 and yy >= 0 and xx < grid._cells_x and yy < grid._cells_y

@@ -20,15 +20,13 @@ if not instance_exists(selected) {
 if transition {
 	apply_view_to_grid(grid, CELL_VIEW.NEUTRAL)
 	reset_meta_cells(grid)
-	var range = select_range(grid, selected._move_range, selected._x, selected._y)
+	var range = select_range(selected._move_range, selected._x, selected._y, grid)
 	apply_view_to_cells(grid, range, CELL_VIEW.MOVE)
 	put_var(machine, V_K_GAME__CELL_RANGE, range)
 	exit
 }
 
-var inputReg = get_input_reg()
-
-if inputReg._esc_p {
+if get_back_pressed() {
 	apply_view_to_grid(grid, CELL_VIEW.NEUTRAL)
 	reset_meta_cells(grid)
 	clear_var(machine, V_K_GAME__CELL_RANGE)
@@ -36,7 +34,7 @@ if inputReg._esc_p {
 	exit
 }
 
-if not inputReg._space_p exit
+if not get_confirm_pressed() exit
 
 var cursor = get_cell_selector()
 var range = get_var(machine, V_K_GAME__CELL_RANGE)
@@ -45,7 +43,7 @@ var cell = find_cell_in_range(range, cursor._x, cursor._y) //If cursor is on mov
 
 if cell == noone exit
 
-if move_unit_to(grid, selected, cell._x, cell._y, true) {
+if move_unit_to_x_y(selected, cell._x, cell._y, true) {
 	apply_view_to_grid(grid, CELL_VIEW.NEUTRAL)
 	reset_meta_cells(grid)
 	change_state(machine, ST_ATTACK_UNIT)

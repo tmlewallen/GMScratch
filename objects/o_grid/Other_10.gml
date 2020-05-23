@@ -29,14 +29,13 @@ for (x_i = 0; x_i < _cells_x; x_i++) {
 }
 
 with (i_pos) {
-	var grid = get_grid()
-	if not valid_pos(grid, _x, _y) continue
-	var cell = get_cell_at(grid, _x, _y)
+	if not valid_pos(_x, _y, other) continue
+	var cell = get_cell_at_i_pos(id, other)
 	x = cell.x
 	y = cell.y
 	var sprite = object_get_sprite(object_index)
 	var posSpriteWidth = sprite_get_width(sprite);
 	var posSpriteHeight = sprite_get_height(sprite);
-	image_xscale = grid._cell_w / posSpriteWidth;
-	image_yscale = grid._cell_h / posSpriteHeight;
+	image_xscale = other._cell_w / posSpriteWidth;
+	image_yscale = other._cell_h / posSpriteHeight;
 }

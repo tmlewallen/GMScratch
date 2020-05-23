@@ -20,7 +20,7 @@ if not instance_exists(selected) {
 if transition {
 	apply_view_to_grid(grid, CELL_VIEW.NEUTRAL)
 	reset_meta_cells(grid)
-	var atkRange = select_range(grid, selected._atk_range, selected._x, selected._y)
+	var atkRange = select_range(selected._atk_range, selected._x, selected._y, grid)
 	var targets = []
 	var ndx = 0
 	for (var i = 0; i < array_length_1d(atkRange); i++) {
@@ -38,9 +38,7 @@ if transition {
 	exit
 }
 
-var input = get_input_reg()
-
-if not input._space_p exit
+if not get_confirm_pressed() exit
 
 var cursor = get_cell_selector()
 var range = get_var(machine, V_K_GAME__CELL_RANGE)

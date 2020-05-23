@@ -1,8 +1,8 @@
 {
-    "id": "53bbedb3-838f-4cc8-b196-a7bbe02a41d3",
+    "id": "2d1f0867-ccff-4442-88dd-aafc60876a95",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "get_unit_at",
+    "name": "set_mouse_mode",
     "IsCompatibility": false,
     "IsDnD": false
 }

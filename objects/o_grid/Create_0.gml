@@ -30,10 +30,10 @@ for (x_i = 0; x_i < _cells_x; x_i++) {
 		var neighbors = []
 		var ndx = 0
 		//Clockwise, starting at 3 oclock
-		if valid_pos(id, x_i + 1, y_i) neighbors[ndx++] = get_cell_at(id, x_i + 1, y_i)
-		if valid_pos(id, x_i, y_i + 1) neighbors[ndx++] = get_cell_at(id, x_i, y_i + 1)
-		if valid_pos(id, x_i - 1, y_i) neighbors[ndx++] = get_cell_at(id, x_i - 1, y_i)
-		if valid_pos(id, x_i, y_i - 1) neighbors[ndx++] = get_cell_at(id, x_i, y_i - 1)
+		if valid_pos(x_i + 1, y_i, id) neighbors[ndx++] = get_cell_at_x_y(x_i + 1, y_i, id)
+		if valid_pos(x_i, y_i + 1, id) neighbors[ndx++] = get_cell_at_x_y(x_i, y_i + 1, id)
+		if valid_pos(x_i - 1, y_i, id) neighbors[ndx++] = get_cell_at_x_y(x_i - 1, y_i, id)
+		if valid_pos(x_i, y_i - 1, id) neighbors[ndx++] = get_cell_at_x_y(x_i, y_i - 1, id)
 		cell._neighbors = neighbors
 	}
 }

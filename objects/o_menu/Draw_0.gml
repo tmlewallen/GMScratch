@@ -26,8 +26,7 @@ if point_in_rectangle(mx, my, x, y, x + _w, y + _h) {
 	}
 }
 if mouseOver != noone {
-	var input_reg = get_input_reg()
-	if input_reg._space_p { 
+	if get_confirm_pressed() { 
 		send_signal(_target, mouseOver._text, id)	
 	}
 }

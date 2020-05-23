@@ -14,3 +14,9 @@ _esc_p   = keyboard_check_pressed(vk_escape)
 
 _q       = keyboard_check(ord("Q"))
 _q_p     = keyboard_check_pressed(ord("Q"))
+
+_mouse_l = mouse_check_button(mb_left)
+_mouse_r = mouse_check_button(mb_right)
+_mouse_l_p = mouse_check_button_pressed(mb_left)
+_mouse_r_p = mouse_check_button_pressed(mb_right)
+
