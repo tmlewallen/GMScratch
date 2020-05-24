@@ -45,20 +45,6 @@
             "value": "\"qwertyuiop\"",
             "varName": "_text",
             "varType": 2
-        },
-        {
-            "id": "4605fe7d-862b-4db0-b2f3-3dfecb334117",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "c_black",
-            "varName": "_c",
-            "varType": 1
         }
     ],
     "solid": false,

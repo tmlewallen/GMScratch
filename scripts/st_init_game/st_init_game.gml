@@ -81,7 +81,8 @@ for (var i = 0; i < array_length_1d(players); i++) {
 game._players = players
 game._enemies = enemies
 game._turn = TURN.PLAYER
-game._window = instance_create_layer(0,0, L_DIALOG, o_unit_summary)
+var xy = calculate_relative_position(0,0, ROOM_W, ROOM_H, RELATIVE_POSITION.TOP_RIGHT)
+game._window = instance_create_layer(xy[0],xy[1], L_DIALOG, o_unit_summary)
 //toggle_visible(game._window, false)
 
 calibrate_grid()
