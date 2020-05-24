@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_set_color(c_white)
-draw_window(x, y, _w, _h)
-draw_set_color(c_white)
+
+draw_window(x, y, _w, _h, c_white)
 var mouseOver = noone
 var mx = mouse_x
 var my = mouse_y

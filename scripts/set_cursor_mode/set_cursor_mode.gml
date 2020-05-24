@@ -10,10 +10,12 @@ var mode = argument0
 
 switch (mode) {
 	case CURSOR_MODE.FREE:
-	
+		toggle_visible(get_cursor(), true)
+		toggle_visible(get_cell_selector(), false)
 		break
 	case CURSOR_MODE.CELL_SELECT:
-		
+		toggle_visible(get_cursor(), true)
+		toggle_visible(get_cell_selector(), true)
 		break
 	default:
 		terminate("Invalide CURSOR_MODE")		

@@ -29,3 +29,8 @@ enum PADDING {
 	BOTTOM,
 	LEFT
 }
+
+enum USER_EVENT {
+	CONSTRUCTOR = 0,
+	DRAW = 1
+}

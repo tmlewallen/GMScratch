@@ -1,23 +1,33 @@
 {
-    "id": "9648b207-8572-4af8-a479-0406b93295cf",
+    "id": "d70078d2-4eef-4629-a74d-6e4ab1c832a3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_game",
+    "name": "o_unit_summary",
     "eventList": [
         {
-            "id": "51b26018-7c68-4dc3-9750-8fe18a1b53bc",
+            "id": "cd056314-9bcc-4111-80df-53ba7a9c9f26",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "9648b207-8572-4af8-a479-0406b93295cf"
+            "m_owner": "d70078d2-4eef-4629-a74d-6e4ab1c832a3"
+        },
+        {
+            "id": "352ee973-bb4c-46d9-895f-d27ca2230fc8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "d70078d2-4eef-4629-a74d-6e4ab1c832a3"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "1553f607-5075-4d4f-a2cb-c4a5389c6c23",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,49 +43,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "b0af1e82-ed9a-475b-9811-6812a914e4d7",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "[]",
-            "varName": "_players",
-            "varType": 5
-        },
-        {
-            "id": "33d6cbb1-7c3f-4657-a479-5f914a7a5837",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "[]",
-            "varName": "_enemies",
-            "varType": 5
-        },
-        {
-            "id": "2b3348c6-59dd-483a-91fb-8a22e238c1ec",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "_turn ",
-            "varType": 1
-        },
-        {
-            "id": "5a981020-4a44-45e4-b7fd-15688335d18d",
+            "id": "4306c381-9a4b-41b0-897b-bcf5e8c4d9ea",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -86,7 +54,35 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "_window",
-            "varType": 0
+            "varType": 5
+        },
+        {
+            "id": "5e83a784-2740-485d-9da3-c84d017955f4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_name_element",
+            "varType": 5
+        },
+        {
+            "id": "f99e963a-2c49-4f78-8f50-3d8ae819bcd9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "_hp_elements",
+            "varType": 5
         }
     ],
     "solid": false,

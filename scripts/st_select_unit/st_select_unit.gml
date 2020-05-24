@@ -10,12 +10,12 @@ var machine = argument2
 assert_st_input(game, machine, o_game)
 
 if transition {
+	set_cursor_mode(CURSOR_MODE.CELL_SELECT)
 	clear_var(machine, V_K_GAME__SELECTED)	
 }
 
 if get_confirm_pressed() {
-	var cs = get_cell_selector()
-	var unit = get_unit_at_i_pos(cs)
+	var unit = get_unit_at_i_pos(get_cell_selector())
 	if unit != noone and unit._active {
 		put_var(machine, V_K_GAME__SELECTED, unit)
 		put_var(machine, V_K_GAME__OPTIONS, ["Move"])

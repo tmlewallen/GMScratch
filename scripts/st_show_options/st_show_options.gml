@@ -9,12 +9,12 @@ var machine = argument2
 
 assert_st_input(game, machine, o_game)
 
+if transition {
+	set_cursor_mode(CURSOR_MODE.FREE)
+}
+
 var unit = get_var(machine, V_K_GAME__SELECTED)
 var options = get_var(machine, V_K_GAME__OPTIONS)
-
-// TODO should we use a "swap modes" helper here? 
-toggle_visible(get_cell_selector(), false)
-toggle_visible(get_cursor(), true)
 
 create_dialog_menu(unit.x, unit.y, machine, options)
 

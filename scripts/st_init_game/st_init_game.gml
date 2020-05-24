@@ -32,17 +32,19 @@ put_state(machine, ST_DEACTIVATE_UNIT, st_deactivate_unit)
 put_state(machine, ST_SHOW_OPTIONS, st_show_options)
 put_state(machine, ST_OPTION_CHOICE, st_option_choice)
 
-var grid = get_grid()
 
-//To prevent weird conflicts with moving multiple units coming from the 
-//same position in before they 'occupy' anything, this can move them all without occupying
-//then come back and move them again to occupy
 var enemies = []
+
 with (instance_create_layer(0,0,L_VIEW, o_enemy)) {
 	_x = 2
 	_y = 1
 	_move_range = 4
 	_atk_range = 1
+	_max_hp = 10
+	_curr_hp = _max_hp
+	_str = 3
+	_def = 2
+	_name = "Bradlee"
 	enemies[0] = id
 }
 
@@ -53,24 +55,34 @@ with (instance_create_layer(0,0,L_VIEW, o_player)) {
 	_y = 3
 	_move_range = 4
 	_atk_range = 1
+	_max_hp = 20
+	_curr_hp = _max_hp
+	_str = 2
+	_def = 2
+	_name = "Roger"
 	players[0] = id
 }
 
 for (var i = 0; i < array_length_1d(players); i++) {
 	var player = players[i]
-	move_unit_to_x_y(player, player._x, player._y, false)
-	move_unit_to_x_y(player, player._x, player._y, true)
+//To prevent weird conflicts with moving multiple units coming from the 
+//same position in before they 'occupy' anything, this can move them all without occupying
+//then come back and move them again to occupy
+	move_unit_to_i_pos(player, player, false)
+	move_unit_to_i_pos(player, player, true)
 }
 
 for (var i = 0; i < array_length_1d(players); i++) {
 	var enemy = enemies[i]
-	move_unit_to_x_y(enemy, enemy._x, enemy._y, false)
-	move_unit_to_x_y(enemy, enemy._x, enemy._y, true)
+	move_unit_to_i_pos(enemy, enemy, false)
+	move_unit_to_i_pos(enemy, enemy, true)
 }
 
 game._players = players
 game._enemies = enemies
 game._turn = TURN.PLAYER
+game._window = instance_create_layer(0,0, L_DIALOG, o_unit_summary)
+//toggle_visible(game._window, false)
 
 calibrate_grid()
 change_state(machine, ST_CHANGE_TURN)

@@ -11,8 +11,6 @@ assert_st_input(game, machine, o_game)
 var choice = get_var(machine, V_K_GAME__CHOICE)
 var source = get_var(machine, V_K_SIGNAL__SOURCE)
 if transition {
-	toggle_visible(get_cell_selector(), true)
-	toggle_visible(get_cursor(), false)
 	dbg(choice)
 	assert_exists(source)
 	instance_destroy(source)

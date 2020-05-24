@@ -9,6 +9,10 @@ var machine = argument2
 
 assert_st_input(game, machine, o_game)
 
+if transition {
+	set_cursor_mode(CURSOR_MODE.CELL_SELECT)
+}
+
 var grid = get_grid()
 var selected = get_var(machine, V_K_GAME__SELECTED)
 

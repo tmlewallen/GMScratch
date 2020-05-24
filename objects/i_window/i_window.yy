@@ -1,23 +1,23 @@
 {
-    "id": "9648b207-8572-4af8-a479-0406b93295cf",
+    "id": "3a33c870-f880-4b66-a8f2-f165c18223df",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_game",
+    "name": "i_window",
     "eventList": [
         {
-            "id": "51b26018-7c68-4dc3-9750-8fe18a1b53bc",
+            "id": "509b04f4-35e6-4dd9-90ac-adadd4dd3b3e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "9648b207-8572-4af8-a479-0406b93295cf"
+            "enumb": 11,
+            "eventtype": 7,
+            "m_owner": "3a33c870-f880-4b66-a8f2-f165c18223df"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "1553f607-5075-4d4f-a2cb-c4a5389c6c23",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,35 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "b0af1e82-ed9a-475b-9811-6812a914e4d7",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "[]",
-            "varName": "_players",
-            "varType": 5
-        },
-        {
-            "id": "33d6cbb1-7c3f-4657-a479-5f914a7a5837",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "[]",
-            "varName": "_enemies",
-            "varType": 5
-        },
-        {
-            "id": "2b3348c6-59dd-483a-91fb-8a22e238c1ec",
+            "id": "3a2bc9be-1f34-4600-834e-29738e83aa17",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -71,11 +43,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "_turn ",
+            "varName": "_w",
             "varType": 1
         },
         {
-            "id": "5a981020-4a44-45e4-b7fd-15688335d18d",
+            "id": "d17a444a-2aa2-4195-9683-701792ed46b9",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -85,11 +57,39 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "_window",
-            "varType": 0
+            "varName": "_h",
+            "varType": 1
+        },
+        {
+            "id": "00061736-37ba-4d06-bc02-499aba8f7512",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "[0,0,0,0]",
+            "varName": "_padding",
+            "varType": 5
+        },
+        {
+            "id": "27f04092-22bf-4ae3-b4a7-f914d5397b96",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "[]",
+            "varName": "_elements",
+            "varType": 5
         }
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "visible": false
 }
