@@ -81,7 +81,8 @@ for (var i = 0; i < array_length_1d(players); i++) {
 game._players = players
 game._enemies = enemies
 game._turn = TURN.PLAYER
-var xy = calculate_relative_position(0,0, ROOM_W, ROOM_H, RELATIVE_POSITION.TOP_RIGHT)
+var c = get_camera()
+var xy = calculate_relative_position(0,0, c._view_w, c._view_h, RELATIVE_POSITION.TOP_CENTER)
 game._window = instance_create_layer(xy[0],xy[1], L_DIALOG, o_unit_summary)
 //toggle_visible(game._window, false)
 

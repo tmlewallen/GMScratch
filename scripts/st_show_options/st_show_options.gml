@@ -16,6 +16,6 @@ if transition {
 var unit = get_var(machine, V_K_GAME__SELECTED)
 var options = get_var(machine, V_K_GAME__OPTIONS)
 
-create_dialog_menu(unit.x, unit.y, machine, options)
+create_menu(unit.x, unit.y, machine, options)
 
 change_to_wait_for_signal(machine, ST_OPTION_CHOICE, V_K_GAME__CHOICE)

@@ -6,8 +6,8 @@ _root_pane.y = y
 var unit = get_unit_at_i_pos(get_cell_selector())
 var isVisible = false
 if unit != noone {
-	_name_element._text = unit._name
-	_hp_element._text = concat(unit._curr_hp, "/", unit._max_hp)
+	update_text_element(_name_element, unit._name)
+	update_text_element(_hp_element, concat(unit._curr_hp, "/", unit._max_hp))
 	isVisible = true
 }
 if isVisible {
@@ -17,7 +17,7 @@ if isVisible {
 //if the built-in variable is 'false' then this step isn't executed
 _visible = isVisible 
 
-var ir = get_input_reg()
-if ir._right_p {
-	x += 5
-}
+//var ir = get_input_reg()
+//if ir._right_p {
+//	x += 5
+//}

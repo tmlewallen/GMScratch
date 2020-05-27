@@ -1,3 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_user(USER_EVENT.DRAW)
+event_inherited()
+_buffer = ""
+_counter = 1
+_speed_counter = 0

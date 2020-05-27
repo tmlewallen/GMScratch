@@ -37,6 +37,7 @@ global._cell_selector = selector
 global._cursor = cursor
 global._input_reg = main._input_reg
 global._main = main
+//global._camera = instance_create_layer(0,0, L_VIEW, o_camera)
 
 draw_set_font(f_menu)
 calibrate_grid()

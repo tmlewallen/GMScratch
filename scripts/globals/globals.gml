@@ -8,7 +8,13 @@
 #macro ROOM_H room_height
 #macro GRID_W 32
 #macro GRID_H 18
+#macro TXT_SP TEXT_SPEED.MEDIUM
 
+enum TEXT_SPEED {
+	SLOW = 5,
+	MEDIUM = 3,
+	FAST = 1
+}
 
 enum CELL_VIEW {
 	NEUTRAL = 0,

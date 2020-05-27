@@ -50,6 +50,20 @@
             "value": "0",
             "varName": "_y",
             "varType": 1
+        },
+        {
+            "id": "da601a94-b8af-4c61-9a1f-4435c1bc5c1f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "_scale_me",
+            "varType": 3
         }
     ],
     "solid": false,
